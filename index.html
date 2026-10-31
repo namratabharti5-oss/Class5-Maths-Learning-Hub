@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="An interactive mathematics learning hub for Class 5 students.">
+  <title>Maths Masti | Class 5</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#"><span class="brand-mark">π</span><span>Maths <b>Masti</b><small>CLASS 5 LEARNING HUB</small></span></a>
+    <nav><a href="#topics">Topics</a><a href="#practice">Practice</a><a href="#about">About</a></nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <span class="eyebrow">LEARN • PLAY • PRACTISE</span>
+        <h1>Maths is an <em>adventure!</em></h1>
+        <p>Explore numbers, solve puzzles and become a Maths Star. Learning mathematics can be fun when you practise a little every day.</p>
+        <a class="primary-btn" href="#topics">Start exploring <span>→</span></a>
+      </div>
+      <div class="hero-art" aria-label="Colourful mathematics symbols">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <span class="float f1">＋</span><span class="float f2">÷</span>
+        <span class="float f3">×</span><span class="float f4">−</span>
+        <div class="math-card"><strong>5</strong><span>is a<br>MAGIC<br>NUMBER!</span></div>
+        <div class="mini-card">1, 2, 3…<br><b>Let's count!</b></div>
+      </div>
+    </section>
+
+    <section class="stats" aria-label="Learning goals">
+      <div><strong>06</strong><span>Learning units</span></div>
+      <div><strong>10+</strong><span>Practice questions</span></div>
+      <div><strong>∞</strong><span>Ways to learn</span></div>
+    </section>
+
+    <section id="topics" class="section">
+      <div class="section-heading"><div><span class="eyebrow">YOUR LEARNING PATH</span><h2>Explore Maths Topics</h2></div><p>Choose a topic to see what you can learn.</p></div>
+      <div class="topic-grid">
+        <button class="topic-card coral" data-topic="numbers"><span class="topic-icon">🔢</span><span class="topic-no">01 / NUMBERS</span><strong>Large Numbers</strong><small>Place value, comparison and rounding</small><span class="card-arrow">↗</span></button>
+        <button class="topic-card yellow" data-topic="operations"><span class="topic-icon">➕</span><span class="topic-no">02 / OPERATIONS</span><strong>Four Operations</strong><small>Addition, subtraction, multiplication and division</small><span class="card-arrow">↗</span></button>
+        <button class="topic-card lavender" data-topic="fractions"><span class="topic-icon">🍕</span><span class="topic-no">03 / FRACTIONS</span><strong>Fractions</strong><small>Parts of a whole and equivalent fractions</small><span class="card-arrow">↗</span></button>
+        <button class="topic-card mint" data-topic="measurement"><span class="topic-icon">📏</span><span class="topic-no">04 / MEASUREMENT</span><strong>Measurement</strong><small>Length, weight, capacity and time</small><span class="card-arrow">↗</span></button>
+        <button class="topic-card blue" data-topic="geometry"><span class="topic-icon">📐</span><span class="topic-no">05 / GEOMETRY</span><strong>Shapes & Geometry</strong><small>Angles, lines and 2D shapes</small><span class="card-arrow">↗</span></button>
+        <button class="topic-card peach" data-topic="data"><span class="topic-icon">📊</span><span class="topic-no">06 / DATA</span><strong>Data Handling</strong><small>Tables, pictographs and bar graphs</small><span class="card-arrow">↗</span></button>
+      </div>
+    </section>
+
+    <section id="topic-detail" class="detail-panel hidden" aria-live="polite">
+      <button class="close-detail" id="close-detail" aria-label="Close topic">×</button>
+      <span class="eyebrow">TOPIC EXPLORER</span><h2 id="detail-title">Topic</h2><p id="detail-description"></p>
+      <div class="detail-example" id="detail-example"></div>
+    </section>
+
+    <section id="practice" class="section practice-section">
+      <div class="section-heading"><div><span class="eyebrow">TEST YOURSELF</span><h2>Quick Maths Challenge</h2></div><p>Answer the question and check your result.</p></div>
+      <div class="quiz-card">
+        <div class="quiz-top"><span>QUESTION <b id="question-number">1</b> OF 5</span><span class="score">⭐ Score: <b id="score">0</b></span></div>
+        <div class="progress"><span id="progress-bar"></span></div>
+        <h3 id="question">What is 250 + 175?</h3>
+        <div class="answers" id="answers"></div>
+        <p id="feedback" class="feedback" aria-live="polite">Choose the correct answer.</p>
+        <div class="quiz-actions"><button id="next-btn" class="primary-btn" disabled>Next question →</button><button id="restart-btn" class="text-btn">Restart quiz</button></div>
+      </div>
+    </section>
+
+    <section class="tip-strip"><span>💡</span><p><b>Maths tip:</b> Read the question carefully, write the steps neatly and always check your answer.</p></section>
+    <section id="about" class="about"><span class="eyebrow">ABOUT THIS PROJECT</span><h2>Small steps make big mathematicians.</h2><p>Maths Masti is a simple, student-friendly learning project designed for Class 5. It introduces key mathematics topics and gives learners a short quiz to practise their skills.</p></section>
+  </main>
+
+  <footer><span>© 2026 Maths Masti · Class 5 Mathematics</span><span>Made for curious minds ✨</span></footer>
+  <script src="script.js"></script>
+</body>
+</html>
